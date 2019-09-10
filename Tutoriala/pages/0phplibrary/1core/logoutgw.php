@@ -1,0 +1,9 @@
+<?php
+session_start();
+	$a=$_SESSION["Phone"];
+	require_once("connection.php");
+	unset($_SESSION["Phone"]);
+session_destroy();
+header("location:../../../login.php");
+die();
+?>
